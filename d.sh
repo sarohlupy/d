@@ -1,3 +1,5 @@
+#!/bin/bash 
+
 # Fungsi untuk menginstal Python 3.9 dan dependensi lainnya
 install_python() {
     log "Memasang Python 3.9..."
