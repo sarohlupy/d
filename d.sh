@@ -1,8 +1,8 @@
-# Fungsi untuk menginstal Python 3.9
+# Fungsi untuk menginstal Python 3.9 dan dependensi lainnya
 install_python() {
     log "Memasang Python 3.9..."
     sudo apt update
-    sudo apt install -y software-properties-common
+    sudo apt install -y software-properties-common git  # Menambahkan instalasi git
     sudo add-apt-repository ppa:deadsnakes/ppa -y
     sudo apt install -y python3.9 python3.9-venv python3.9-dev python3-pip libopencv-dev python3-opencv
     python3.9 -m pip install --upgrade pip
